@@ -1,0 +1,15 @@
+body{ 
+    font-family: Mukti Narrow, monospace;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+em{
+    background-color: #FFF667;
+}
+
+a{
+    color: #06F;
+    text-decoration: none;
+}
+
