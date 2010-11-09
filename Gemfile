@@ -16,6 +16,11 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # To use debugger
 # gem 'ruby-debug'
 
+group :development, :test do 
+      gem 'cucumber-rails'
+      gem 'capybara'
+    end
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
