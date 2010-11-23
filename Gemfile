@@ -33,6 +33,7 @@ group :development, :test do
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem 'omnisocial'
 gem "devise"
 gem "formtastic", "~> 1.1.0"
 gem "heroku", :group => :development
