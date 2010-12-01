@@ -9,12 +9,12 @@ Omnisocial.setup do |config|
   if Rails.env.production?
      # Configs for production mode go here
      config.twitter 'FQx86BCrCNNOUAJ2fmbRA','ITZCWiiYUYaeU1vZNaWBJtKZyinFt5U6Wdfcy409IY' 
-     config.facebook '172372752780895','1b52cc35595810accae3f631de8b7790'   
+     config.facebook '164349440268966','7f4a7d2fd94bad1930902c58155e71e0'  
   elsif Rails.env.development?
     
     # Configs for development mode go here
     config.twitter 'FQx86BCrCNNOUAJ2fmbRA','ITZCWiiYUYaeU1vZNaWBJtKZyinFt5U6Wdfcy409IY'
-    config.facebook '172372752780895','1b52cc35595810accae3f631de8b7790'
+    config.facebook '164349440268966','7f4a7d2fd94bad1930902c58155e71e0'
   end
   
 end
