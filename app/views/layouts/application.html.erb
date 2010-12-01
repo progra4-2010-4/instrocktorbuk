@@ -10,14 +10,14 @@
 </head>
 <header>
         <h1><%=link_to "INSTROCKTORBUK","/"%></h1>
-
+            
             <%unless current_user!=false%>
 
             <%=link_to "Login", "/login"%>
            
 	   <%else%>
-	
-		<%=current_user%>
+	  
+ 		<h1><%=current_user.name%></h1>
             <%= link_to "Logout","/logout" %>
 	   <%end%>
            
