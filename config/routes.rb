@@ -1,15 +1,15 @@
 Instrocktorbuk::Application.routes.draw do
-  get "user/show"
+  get "user/create"
 
-  get "user/edit"
+  get "user/new"
 
   get "user/update"
 
   get "user/destroy"
 
-  get "user/create"
-
-  get "user/new"
+  get "user/edit"
+  
+  get "user/show"
 
   root :to => "static#index"
 

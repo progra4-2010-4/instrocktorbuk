@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123025823) do
+ActiveRecord::Schema.define(:version => 20101202140532) do
 
   create_table "login_accounts", :force => true do |t|
     t.string   "type"
@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(:version => 20101123025823) do
     t.string   "remember_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
   end
 
 end

@@ -1,6 +1,9 @@
 class UserController < ApplicationController
-  
-  def show
+  def create
+    @user = User.create(params[:user])
+  end
+
+  def new
   end
 
   def edit
@@ -12,12 +15,11 @@ class UserController < ApplicationController
   def destroy
   end
 
-  def create
-    @user = User.create( params[:user] )
+  def edit
   end
-
-
-  def new
+  
+  def show
+  @user = User.create(params[:user])
   end
 
 end
