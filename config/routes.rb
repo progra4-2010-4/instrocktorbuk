@@ -1,4 +1,18 @@
 Instrocktorbuk::Application.routes.draw do
+  get "user/create"
+
+  get "user/new"
+
+  get "user/update"
+
+  get "user/destroy"
+
+  get "user/edit"
+  
+  get "user/show"
+
+  root :to => "static#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
