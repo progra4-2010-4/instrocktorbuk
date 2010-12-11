@@ -10,7 +10,7 @@
 	<div id="fondo">
 		<header>
 			<div class="main">
-			
+			<img src="jojo.gif" width="28" height="21" alt="Tamaño original" border="3">
 				<h1 align="center"><%=link_to "INSTROCKTORBUK", '/'%></h1>
 				<%unless current_user!=false%>
 					<%=link_to "Login", '/login'%>

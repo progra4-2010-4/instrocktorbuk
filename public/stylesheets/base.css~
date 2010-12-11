@@ -1,0 +1,35 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    width: 700px;
+}
+
+header, footer{
+    background-color: rgb(0, 51, 102);
+    color: blue;
+    border-radius: 5px;
+}
+
+a{
+    color: #001A33;
+    font-family: fantasy;
+}
+
+#main{
+    background-color: rgba(61,61,61, 0.5);
+    min-height: 100px;
+}
+
+#upload_photo{
+	background-color: rgba(184, 184, 184, 0.5);
+	font-family: cursive;
+	width: 700px;
+	min-height: 100px;
+}
+
+#fondo{
+	background-color: rgba(0,26,51,0.5);
+	width: 700px;
+	min-height: 100px;
+}
+
