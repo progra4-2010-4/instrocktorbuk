@@ -1,2 +1,4 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+
+<h2><%=@book.titulo%> by <%=@book.autor%></h2>
+<%=image_tag @book.cover.url%>
+<%=link_to "Descargar imagen", @book.cover.url%>

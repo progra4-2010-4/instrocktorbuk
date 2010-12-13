@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101213184512) do
+ActiveRecord::Schema.define(:version => 20101213220621) do
 
   create_table "books", :force => true do |t|
     t.string   "titulo"
@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(:version => 20101213184512) do
     t.text     "descripcion"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
   end
 
   create_table "login_accounts", :force => true do |t|
@@ -39,6 +43,9 @@ ActiveRecord::Schema.define(:version => 20101213184512) do
     t.string   "remember_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
   end
 
 end

@@ -1,6 +1,10 @@
-<% semantic_form_for @book do |f|%>
-  <%= f.inputs %>
+<%= semantic_form_for @book, :html=>{:multipart => true} do |f|%>
+  <%= f.inputs do %>
+    <%= f.input :titulo %>
+    <%= f.input :autor %>
+    <%= f.input :clase %>
+    <%= f.input :descripcion %>
+    <%= f.input :cover %>
+  <%end%>
   <%= f.buttons %>
 <%end%>
-
-
