@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123025823) do
+ActiveRecord::Schema.define(:version => 20101213184512) do
+
+  create_table "books", :force => true do |t|
+    t.string   "titulo"
+    t.string   "autor"
+    t.string   "clase"
+    t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "login_accounts", :force => true do |t|
     t.string   "type"
