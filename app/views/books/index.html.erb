@@ -1,7 +1,9 @@
 <h1>Todos los libros</h1>
 <ul>
   <%@books.each do |libro|%>
-    <li><%=libro.titulo%> by <%=libro.autor%></li>
+    <li><%=libro.titulo%> by <%=libro.autor%> <%=image_tag libro.cover.url%>
+<%=link_to "Descargar imagen", libro.cover.url%>     </li>
+        
   <%end%>
 </ul>
 
