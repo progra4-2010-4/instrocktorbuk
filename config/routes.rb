@@ -1,4 +1,18 @@
 Instrocktorbuk::Application.routes.draw do
+  get "books/index"
+
+  get "books/create"
+
+  get "books/new"
+
+  get "books/show"
+
+  get "books/search"
+
+  get "books/update"
+
+  get "books/destroy"
+
   get "user/create"
 
   get "user/new"
