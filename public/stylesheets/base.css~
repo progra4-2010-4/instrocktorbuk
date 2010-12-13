@@ -6,13 +6,13 @@ body{
 
 header, footer{
     background-color: rgb(0, 51, 102);
-    color: blue;
+    color: #D68F00;
     border-radius: 5px;
 }
 
 a{
-    color: #001A33;
-    font-family: fantasy;
+    color: #1A3300;
+    font: bold 120% monospace; 
 }
 
 #main{
@@ -20,16 +20,41 @@ a{
     min-height: 100px;
 }
 
+#title{
+	text-align: center;
+}
+
+#links{
+	text-align: center;
+}
+
 #upload_photo{
-	background-color: rgba(184, 184, 184, 0.5);
+	background-color: rgba(184, 184, 184,0.5);
 	font-family: cursive;
+	width: 700px;
+	min-height: 200px;
+	text-align: center;
+}
+
+#solucionarios{
+	background-color: rgba(184, 184, 184,0.5);
+	font-family: cursive;
+	width: 700px;
+	min-height: 200px;
+	text-align: center;
+}
+
+#fondo{
+	background-color: rgba(0,26,51,0.8);
 	width: 700px;
 	min-height: 100px;
 }
 
-#fondo{
-	background-color: rgba(0,26,51,0.5);
+#solucionario_fisica, solucionario_matematica{
+	background-color: rgba(184, 184, 184,0.5);
+	font-family: cursive;
 	width: 700px;
-	min-height: 100px;
+	min-height: 200px;
+	text-align: center;
 }
 

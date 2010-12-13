@@ -1,4 +1,34 @@
 Instrocktorbuk::Application.routes.draw do
+  get "solucionarios/index"
+
+  get "solucionario_fisica/show"
+
+  get "solucionario_fisica/index"
+
+  get "solucionario_fisica/create"
+
+  get "solucionario_fisica/new"
+
+  get "solucionario_fisica/update"
+
+  get "solucionario_fisica/destroy"
+
+  get "solucionario_fisica/edit"
+
+  get "solucionario_matematica/show"
+
+  get "solucionario_matematica/index"
+
+  get "solucionario_matematica/create"
+
+  get "solucionario_matematica/new"
+
+  get "solucionario_matematica/update"
+
+  get "solucionario_matematica/destroy"
+
+  get "solucionario_matematica/edit"
+
   get "user/create"
 
   get "user/new"

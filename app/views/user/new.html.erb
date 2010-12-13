@@ -2,8 +2,9 @@
 	<h1>Upload your photo</h1>
 	<% form_for :user, :html => { :multipart => true } do |f| %>
 	  <%= f.file_field :photo%>
-		<p><%= f.submit 'Create' %></p>
+		<p>
+			<%= f.submit 'Create' %>
+			<%= link_to 'Back', user_show_path %>
+		</p>
 	  <% end %>
-	  <%= link_to 'Back', user_show_path %>
-	  <img src="public/images/jojo.gif"/>
 </div>

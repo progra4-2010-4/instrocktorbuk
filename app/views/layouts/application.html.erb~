@@ -6,19 +6,30 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body bgcolor="#C2C2C2" text="#001A33">
+	<img src="public/image/jojo.gif"/>
 	<div id="fondo">
 		<header>
 			<div class="main">
-			<img src="jojo.gif" width="28" height="21" alt="Tamaño original" border="3">
-				<h1 align="center"><%=link_to "INSTROCKTORBUK", '/'%></h1>
-				<%unless current_user!=false%>
-					<%=link_to "Login", '/login'%>
-		   		<%else%>
-					<%=current_user.name%>
-					<%= link_to "Logout",'/logout' %>
-					<%= link_to "Upload photo", '/user/new'%>
-		   		<%end%>
+				<div id="title">
+					<h1><%=link_to "INSTROCKTORBUK", '/'%></h1>
+				</div>
+				<div id="links">
+					<%unless current_user!=false%>
+						<%=link_to "Login", '/login'%>
+			   		<%else%>
+						<%=current_user.name%>
+						<%= link_to "Logout",'/logout' %>
+						<%= link_to "Upload photo", '/user/new'%>
+						<%= link_to "solucionarios", '/solucionarios/index'%>
+						<SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('prueba');"> 
+							<OPTION VALUE="link pagina 1">opcion1</OPTION>
+							<OPTION VALUE="link pagina 2">opcion2</OPTION>
+							<OPTION VALUE="link pagina 3">opcion3</OPTION>
+							<OPTION VALUE="link pagina 4">opcion4</OPTION> 
+						</SELECT>
+			   		<%end%>
+	   			</div>
 	   		</div>
 		</header>
 		<%= yield %>
