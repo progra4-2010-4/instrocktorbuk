@@ -1,3 +1,4 @@
+
 <h2><%=@book.titulo%> by <%=@book.autor%></h2>
 <%=image_tag @book.cover.url%>
 <%=link_to "Descargar imagen", @book.cover.url%>

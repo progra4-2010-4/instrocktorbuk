@@ -1,5 +1,4 @@
 <div id="new_books">
-<h1 align="center">Crear solucionario</h1> 
 <%= semantic_form_for @book, :html=>{:multipart => true} do |f|%>
   <%= f.inputs do %>
     <%= f.input :titulo %>

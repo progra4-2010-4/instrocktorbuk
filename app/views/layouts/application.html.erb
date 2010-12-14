@@ -9,6 +9,7 @@
   <%= csrf_meta_tag %>
 </head>
 <header>
+     <div id="main">
         <h1><%=link_to "INSTROCKTORBUK","/"%></h1>
 
             <%unless current_user!=false%>
@@ -17,11 +18,16 @@
            
 	   <%else%>
 	
-		<%=current_user.name%>
+			<%=current_user.name%>
+            |
             <%= link_to "Logout","/logout" %>
+            |
+            <%=link_to "Crear solucionario", '/books/new'%>
+            |
+            <%=link_to "Descargar solucionario", '/books'%>
 	   <%end%>
            
-
+	</div>
 
         </header>
 <body>

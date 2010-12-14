@@ -2,67 +2,52 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     margin: 0 auto;
     width: 700px;
+    background: #DDD url(http://24ways.org/img/body.gif) repeat fixed 0px 0px;
 }
 
 header, footer{
     background-color: rgb(0, 51, 102);
-    color: #D68F00;
-    border-radius: 5px;
+    color: #999900;
+    font: bold 120% Helvetica; 
 }
 
-a{
-    color: #1A3300;
+a:hover{
+    color: #996600;
     font: bold 120% monospace; 
 }
 
+a{
+	text-decoration:none;
+	color:#858585;
+}
+
+ol{
+	list-style-type:none;
+}
+
 #main{
-    background-color: rgba(61,61,61, 0.5);
+    background-color: rgba(0,26,51, 0.9);
     min-height: 100px;
+    text-align: center;
+    width: 700px; 
+    border-radius: 40px;
 }
 
-#title{
-	text-align: center;
+#new_books{
+	border-style:solid;
+	border-width:3px;
+	border-color: rgba(0,26,51,0.9);
+	text-align: left;
+	color :#001A33;
 }
 
-#links{
-	text-align: center;
+#index_books{
+	border-style:solid;
+	border-width:3px;
+	border-color: rgba(0,26,51,0.9);
+	text-align: left;
+	color :#001A33;
 }
 
-#upload_photo{
-	background-color: rgba(184, 184, 184,0.5);
-	font-family: cursive;
-	width: 700px;
-	min-height: 200px;
-	text-align: center;
-}
 
-#solucionarios{
-	background-color: rgba(184, 184, 184,0.5);
-	font-family: cursive;
-	width: 700px;
-	min-height: 200px;
-	text-align: center;
-}
-
-#fondo{
-	background-color: rgba(0,26,51,0.8);
-	width: 700px;
-	min-height: 100px;
-}
-
-#solucionario_fisica{
-	background-color: rgba(184, 184, 184,0.5);
-	font-family: cursive;
-	width: 700px;
-	min-height: 200px;
-	text-align: center;
-}
-
-#solucionario_matematica{
-	background-color: rgba(184, 184, 184,0.5);
-	font-family: cursive;
-	width: 700px;
-	min-height: 200px;
-	text-align: center;
-}
 

@@ -1,32 +1,31 @@
 class Book < ActiveRecord::Base
 attr_accessible :titulo, :autor, :clase, :descripcion, :cover
  has_attached_file :cover
- before_validation :capitalizing_titulo
-	before_validation :capitalizing_autor
+ before_validation :capitalizing_title
+	before_validation :capitalizing_author
 
 
 	validates_presence_of :titulo
 	validates_presence_of :autor
-	
-	def capitalizing_titulo
-	     unless self.titulo.nil?
-		x = self.titulo.split() 
+	def capitalizing_title
+	     unless self.title.nil?
+		x = self.title.split() 
 		s = []
 		x.each do |d|
 			s << d.capitalize
 		end
-		self.titulo = s.join(" ")
+		self.title = s.join(" ")
 	    end
 	end
 
-	def capitalizing_autor
-	   unless self.autor.nil?
-		x = self.autor.split() 
+	def capitalizing_author
+	   unless self.author.nil?
+		x = self.author.split() 
 		s = []
 		x.each do |d|
 			s << d.capitalize
 		end
-		self.autor = s.join(" ")
+		self.author = s.join(" ")
 	   end
 	end
 end
