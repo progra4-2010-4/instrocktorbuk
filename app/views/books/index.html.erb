@@ -3,7 +3,9 @@
 	<ul>
 	  <%@books.each do |libro|%>
 		<li><%=libro.titulo%> by <%=libro.autor%> <%=image_tag libro.cover.url%>
-			<%=link_to "Descargar Archivo", libro.cover.url%>     
+			<%=link_to "Descargar Archivo", libro.cover.url%>
+			<p>Descrpcion:  
+			<%=libro.descripcion%></p>     
 		</li>
 	  <%end%>
 	</ul>
