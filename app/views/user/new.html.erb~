@@ -1,0 +1,10 @@
+<div id="upload_photo">
+	<h1>Upload your photo</h1>
+	<% form_for :user, :html => { :multipart => true } do |f| %>
+	  <%= f.file_field :photo%>
+		<p>
+			<%= f.submit 'Create' %>
+			<%= link_to "Back", user_show_path %>
+		</p>
+	  <% end %>
+</div>
